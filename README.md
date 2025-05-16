@@ -9,9 +9,15 @@ The project demonstrates how LoRA slashes train-time memory footprints while mat
 
 | Path | What’s inside |
 |------|---------------|
-| `notebooks/` | Two Jupyter notebooks: **CPU** and **GPU** variations of the workflow |
-| 'Group-21.pdf' | The final presentation of our project |
-| 'requirements.txt | Requirements file that contains the dependencies list for the project |
+| `notebooks/` | (Optional) original exploratory notebooks kept for reference |
+| `src/` | **Production code** – dataset utils, LoRA wrapper, training & inference CLIs |
+| `src/data/` | `tweet_dataset.py` for loading, splitting, and tokenising the Kaggle corpus |
+| `src/models/` | `lora_wrapper.py` that inserts / loads LoRA adapters into any HF model |
+| `src/train.py` | CLI script: launches a Hugging-Face `Trainer` run with LoRA |
+| `src/inference.py` | Tiny CLI for single-tweet prediction with a saved adapter |
+| `requirements.txt` | Locked package versions (PyTorch 2.7 + Transformers 4.51, etc.) |
+| `README.md` | **← you are here** |
+
 
 
 ---
