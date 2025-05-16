@@ -1,7 +1,6 @@
 # LoRA-Fine-Tuning on DistilBERT for Disaster-Tweet Classification 🚀
 
-Fine-tuning **DistilBERT** with **Low-Rank Adaptation (LoRA)** on both CPU-only and GPU (CUDA) hardware.  
-The project demonstrates how LoRA slashes train-time memory footprints while matching full-fine-tune accuracy.
+Generative AI workloads—in particular, large language models (LLMs) and text-to-image diffusion models—demand heavy compute and memory resources for both fine-tuning and inference. Parameter-efficient fine-tuning techniques (e.g., LoRA, QLoRA) and post-training quantization (e.g., INT8) promise to reduce these requirements, but relative performance across different hardware tiers (CPUs, GPUs, TPUs) remains underexplored. In this work, we conduct a two-part study: (1) disaster-tweet classification using DistilBERT on CPU and GPU, comparing full fine-tuning versus LoRA; (2) Stable Diffusion 1.5 personalization on CPU and GPU, comparing LoRA, SVDiff, Custom Diffusion, and DreamBooth. We measure accuracy/quality, end-to-end training time, inference latency, peak memory, parameter efficiency, and energy consumption. Our results show that GPUs deliver 10–20× speedups and roughly 3× lower memory usage versus CPUs; LoRA on GPU achieves 95 % of full fine-tune quality at 11× faster training and one-quarter the memory footprint; among diffusion personalization methods, SVDiff offers the best trade-off (0.4 ‰ trainable params, zero latency penalty) followed by LoRA, Custom Diffusion, and DreamBooth. These findings provide concrete guidance for selecting cost-effective, hardware-aware tuning strategies in resource-constrained 
 
 ---
 
