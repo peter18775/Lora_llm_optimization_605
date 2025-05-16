@@ -10,6 +10,8 @@ The project demonstrates how LoRA slashes train-time memory footprints while mat
 | Path | What’s inside |
 |------|---------------|
 | `notebooks/` | Two Jupyter notebooks: **CPU** and **GPU** variations of the workflow |
+| 'Group-21.pdf' | The final presentation of our project |
+| 'requirements.txt | Requirements file that contains the dependencies list for the project |
 
 
 ---
