@@ -27,4 +27,4 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 # 3. Run a notebook (CPU example)
-jupyter lab notebooks/cpu-lora-llm.ipynb
+jupyter lab notebooks/gpu-lora-llm.ipynb #we are running gpu code only because we know the outcome of how cpu will take 15 hrs to complete the task.
